@@ -51,10 +51,12 @@ class DoublelinkList:
     def remove_last(self):
         if self.tail is not None:
             self.remove_node(self.tail)
-
+    def remove_front(self):
+        if self.head is not None:
+            self.remove_node(self.head)
     def back(self):
         return self.tail.val
-    def head(self):
+    def front(self):
         return  self.head.val
 
 #my_list = DoublelinkList()
@@ -65,8 +67,8 @@ class DoublelinkList:
 #my_list.add(7)
 #my_list.add(7)
 #print(my_list)
-#my_list.remove(8)
+#y_list.remove(8)
 #my_list.remove(7)
-#my_list.remove_last()
+#my_list.remove_front()
 #print(my_list)
 #print(my_list.size)
